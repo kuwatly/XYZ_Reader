@@ -9,23 +9,19 @@
     android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <android.support.design.widget.CoordinatorLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
             <android.support.design.widget.CoordinatorLayout
                 android:id="@+id/photo_container"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
                 <!--suppress AndroidLintContentDescription -->
                 <ImageView
                     android:id="@+id/photo"
                     android:transitionName="@string/transition_photo"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="@dimen/detail_card_top_margin"
                     android:scaleType="centerCrop"
                      />
 
-            </android.support.design.widget.CoordinatorLayout>
 
             <com.example.xyzreader.ui.MaxWidthLinearLayout
                 android:orientation="vertical"
